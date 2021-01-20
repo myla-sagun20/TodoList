@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**/
+
+/* MYLA:
+ref: https://codepen.io/mai_sagun/pen/ExgrJxq
+# are changed to .
+*/
+/* Google font */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* styling paper */
+.paper {
+  width: 600px;
+  height: 700px;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+/* styling red vertical line */
+.paper::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255,0,0,0.6);
+}
+
+/* styling blue horizontal lines */
+.pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+/* styling text content */
+.content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.list-item-2 {
+  display: block;
+  padding: .05em 2em;
+  height: 25px;
+}
+
