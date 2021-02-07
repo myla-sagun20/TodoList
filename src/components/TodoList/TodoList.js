@@ -11,7 +11,7 @@ const TodoList = (props) => {
   // })
 
   const todos = todoList.map((todo, index) => {
-    return <Todo content={todo} key={index} id={index} />
+    return <Todo content={todo.description} key={index} id={index} isDone={todo.done} />
   })
   return( 
     <div className='list-wrapper'>
