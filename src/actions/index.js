@@ -11,3 +11,24 @@ export const removeTodo = (index) => {
         payload : index
     };
 }
+
+// export const updateTodo = (Task, Index) => {
+//     return{
+//         type: 'removeTodo',
+//         payload : {task: Task, index:Index}
+//     };
+// }
+
+export const checkTodo = (index) => {
+    return {
+        type: 'checkTodo',
+        payload: index
+    };
+}
+
+export const uncheckTodo = (index) => {
+    return {
+        type: 'uncheckTodo',
+        payload: index
+    };
+}
