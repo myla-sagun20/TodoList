@@ -4,8 +4,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import { addTodo } from '../../actions'
 import { useState } from 'react'
 
-//{description: 'task 1', done: false}
-//const [inputValues, setInputValues] = useState({ todo: '' });
 const SubmitForm = () => {
   const dispatch = useDispatch();
   const [inputValues, setInputValues] = useState({description: 'task 1', done: false});

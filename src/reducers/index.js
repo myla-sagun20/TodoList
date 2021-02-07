@@ -1,14 +1,7 @@
-//const initialState  =
-//{
-    //todos : ['task 1', 'task 2', 'task 3', 'task 4']
-//}
-
 const initialState = 
 {
     todos : [{description: 'task 1', done: false}, {description: 'task 2', done: true}]
 }
-//const todos = [{description: 'task 1', done: false}, {description: 'task 2', done: false}];
-
 
 const todoReducer = (state = initialState, action) =>
 {
@@ -33,7 +26,6 @@ const todoReducer = (state = initialState, action) =>
                     ...state.todos.slice(0,action.payload),
                     Object.assign({}, state.todos[action.payload], {done: true}),
                     ...state.todos.slice(action.payload+1)
-                   //,...state.items
                  ]
             }
             case 'uncheckTodo':
@@ -45,7 +37,6 @@ const todoReducer = (state = initialState, action) =>
                     ...state.todos.slice(0,action.payload),
                     Object.assign({}, state.todos[action.payload], {done: false}),
                     ...state.todos.slice(action.payload+1)
-                   //,...state.items
                  ]
             }
         default: return state;
